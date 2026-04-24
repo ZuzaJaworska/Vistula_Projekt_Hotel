@@ -1,0 +1,2 @@
+class HotelSystem implements Manageable {
+}

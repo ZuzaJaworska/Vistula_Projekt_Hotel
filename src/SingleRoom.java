@@ -1,0 +1,2 @@
+class SingleRoom extends Room {
+}

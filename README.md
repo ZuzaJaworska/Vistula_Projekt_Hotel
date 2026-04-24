@@ -5,12 +5,10 @@ Semestr: L2026
 Projekt zaliczeniowy: System rezerwacji hotelowych
 
 Studenci:
-Grzeszczuk Damian
-Jaworska Zuzanna
-Marcinkiewicz Bartłomiej
-Świder Dominika
+Grzeszczuk Damian, Jaworska Zuzanna, Marcinkiewicz Bartłomiej, Świder Dominika
 
 Opis:
+
 Temat projektu - system rezerwacji hotelowych.
 
 Wymagania konieczne (niespełnienie któregokolwiek z warunków koniecznych skutkuje otrzymaniem zero punktów przez całą grupę):

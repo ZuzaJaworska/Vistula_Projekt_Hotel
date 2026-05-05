@@ -1,5 +1,5 @@
 // Słowo "extends" oznacza, że nasza klasa "dziedziczy" po głównej klasie błędów w Javie (Exception).
-// Dzięki temu nasz HotelException jest traktowany przez system jak pełnoprawny błąd.
+// Dzięki temu nasz hotelexception jest traktowany przez system jak pełnoprawny błąd.
 public class HotelException extends Exception {
 
     // To jest konstruktor. Uruchamia się, gdy chcemy "wyrzucić" nowy błąd.

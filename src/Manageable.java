@@ -1,6 +1,6 @@
 // Słowo "interface" oznacza, że to nie jest zwykła klasa, tylko KONTRAKT (spis treści).
 // Nie ma tu żadnego kodu wykonawczego, są tylko nazwy metod, które system musi posiadać.
-public interface Manageable {
+interface Manageable {
 
     // To jest pierwsza metoda z kontraktu.
     // Zmusza system do posiadania funkcji dodawania rezerwacji.

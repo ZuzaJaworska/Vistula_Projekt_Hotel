@@ -36,6 +36,19 @@ public class Main {
             // Każdy pokój liczy koszt po swojemu — polimorfizm w akcji
           //  System.out.println("Pokój " + room.getRoomNumber() +
               //      " koszt: " + room.calculateTotalCost() + " PLN");
+
+        }
+        // Tworzymy system (to jest obiekt klasy, ktora ma moj interfejs)
+        HotelSystem system = new HotelSystem();
+
+// Wywolujemy metody — teraz ostrzezenia w Manageable.java znikna!
+        system.wyswietlWszystko();
+
+        try {
+            // Proba dodania rezerwacji
+            system.dodajRezerwacje(new Guest("Jan", "Kowalski", 1, true), rooms.get(0), 5);
+        } catch (HotelException e) {
+            System.out.println("Blad: " + e.getMessage());
         }
         System.out.println(a1);
         System.out.println(r1);

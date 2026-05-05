@@ -1,5 +1,5 @@
 //Enum z wyborem rodzaju pokoju
-enum RoomType {
+public enum RoomType {
 
     SINGLE, DOUBLE, SUITE;
 }

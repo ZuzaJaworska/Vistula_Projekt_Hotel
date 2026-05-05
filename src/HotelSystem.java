@@ -19,5 +19,15 @@ class HotelSystem implements Manageable {
     // Używa pól: przekazanej tablicy polimorficznej pokoi.
     // Działanie: Pętla FOR (pętla 2). Wewnątrz sprawdza 'if(roomArray[i] instanceof Apartment)'.
     // Wtedy następuje DOWNCASTING: Apartment a = (Apartment) roomArray[i]; i wywołanie a.getMinibarFee().
+// --- Metody z interfejsu Manageable (dodane jako zaslepki, Osoba 1 musi je uzupelnic) ---
 
+    @Override
+    public void dodajRezerwacje(Guest guest, Room room, int days) throws HotelException {
+        // TODO: Osoba 1 - tutaj napisz logike dodawania do listy 'reservations'
+    }
+
+    @Override
+    public void wyswietlWszystko() {
+        // TODO: Osoba 1 - tutaj napisz logike wyswietlania list
+    }
 }

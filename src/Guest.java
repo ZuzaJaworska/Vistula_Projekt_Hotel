@@ -3,6 +3,12 @@ class Guest extends Person {
     private int guestId;
     private boolean isVIP;
 
+    public Guest(String firstName, String lastName, int guestId, boolean isVIP) {
+        super(firstName, lastName);
+        this.guestId = guestId;
+        this.isVIP = isVIP;
+    }
+
     // Metody i ich przeznaczenie:
     // Konstruktor: wywołuje super(firstName, lastName) i inicjalizuje 'guestId' oraz 'isVIP'.
     //

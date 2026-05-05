@@ -2,12 +2,13 @@ public class SingleRoom extends Room {
 
     private boolean hasSeaView;
 
+    //Konstruktor Singleroom
     public SingleRoom(int roomNumber, double basePrice, RoomType roomType, boolean hasSeaView) {
         super(roomNumber, basePrice, roomType);
         this.hasSeaView = hasSeaView;
     }
 
-    // Getter i Setter widoku na morze
+    //Getter i Setter widoku na morze
     public boolean hasSeaView() {
         return hasSeaView;
     }
@@ -25,6 +26,7 @@ public class SingleRoom extends Room {
         return getBasePrice();
     }
 
+    //Nadpisanie metody toString
     @Override
     public String toString() {
         return "Pokój Standard:" +

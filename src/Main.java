@@ -22,6 +22,8 @@ public class Main {
         // Oczekuje na wejście ze Scannera. Używa bloków TRY-CATCH do przechwytywania HotelException.
         // Komunikaty w konsoli ułatwiają interakcję.
 
+
+        // Testowanie class Damiancia:
         List<Room> rooms = new ArrayList<>();
         rooms.add(new Apartment(101, 300.0, RoomType.SUITE, 50.0, 102));
         rooms.add(new SingleRoom(102, 150.0, RoomType.SINGLE, true));
@@ -37,6 +39,7 @@ public class Main {
         }
         System.out.println(a1);
         System.out.println(r1);
+        //Koniec testowania klas Damiancia
 
     }
 }

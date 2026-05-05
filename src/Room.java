@@ -6,13 +6,14 @@ public abstract class Room {
     private double basePrice;
     private RoomType roomType;
 
+    //Konstruktor pokoju
     public Room(int roomNumber, double basePrice, RoomType roomType) {
         this.roomNumber = roomNumber;
         this.basePrice = basePrice;
         this.roomType = roomType;
     }
 
-    // Gettery
+    //Gettery
     public int getRoomNumber() {
         return roomNumber;
     }
@@ -25,7 +26,7 @@ public abstract class Room {
         return roomType;
     }
 
-    // Settery
+    //Settery
     public void setRoomNumber(int roomNumber) {
         this.roomNumber = roomNumber;
     }
@@ -38,11 +39,11 @@ public abstract class Room {
         this.roomType = roomType;
     }
 
-    // Metoda abstrakcyjna
+    //Metoda abstrakcyjna do obliczania finalnego ksoztu pokoju
 
     public abstract double calculateTotalCost();
 
-    // equals i hashCode oparte na roomNumber
+    //Equals i hashCode oparte na roomNumber, zapobiegamy tutaj duplikatom pokoi
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -50,12 +51,12 @@ public abstract class Room {
         Room room = (Room) o;
         return roomNumber == room.roomNumber;
     }
-
     @Override
     public int hashCode() {
         return Objects.hash(roomNumber);
     }
 
+    //Nadpisanie metody toString
     @Override
     public String toString() {
         return "Pokój standard" +

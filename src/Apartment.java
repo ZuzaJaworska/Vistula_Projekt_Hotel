@@ -3,6 +3,7 @@ public class Apartment extends Room {
     private double miniBarFee;
     private int parking;
 
+    //Konstruktor Apartamentu
     public Apartment(int roomNumber, double basePrice, RoomType roomType,
                      double miniBarFee, int parking) {
         super(roomNumber, basePrice, roomType);
@@ -10,7 +11,7 @@ public class Apartment extends Room {
         this.parking = parking;
     }
 
-    // Gettery i Settery
+    //Gettery i Settery
     public double getMiniBarFee() {
         return miniBarFee;
     }
@@ -27,13 +28,14 @@ public class Apartment extends Room {
         this.parking = parking;
     }
 
-    // Kluczowa metoda dla downcastingu
+    //Metoda do downcastingu
     //Sumujemy cenę bazową pobieraną getterem z Room z opłatą za minibar
     @Override
     public double calculateTotalCost() {
         return getBasePrice() + miniBarFee;
     }
 
+    //Nadpisanie metody toString
     @Override
     public String toString() {
         return "Apartament BIZNES:" +

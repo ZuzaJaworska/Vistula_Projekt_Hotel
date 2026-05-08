@@ -7,7 +7,21 @@ abstract class Person {
         this.firstName = firstName;
         this.lastName = lastName;
     }
+    public String getFirstName() {
+        return firstName;
+    }
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
     // Metody i ich przeznaczenie:
     // Konstruktor: inicjalizuje pola 'firstName' i 'lastName'.
     // Gettery i Settery: zapewniają bezpieczny dostęp do 'firstName' i 'lastName' (hermetyzacja).
@@ -18,4 +32,6 @@ abstract class Person {
     // Metoda: @Override public String toString()
     // Używa pól: 'firstName', 'lastName'.
     // Działanie: Zwraca czytelny ciąg znaków z imieniem i nazwiskiem (np. do metody generycznej).
+    public abstract void displayRole();
 }
+
